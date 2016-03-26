@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313B9D2D1C716AF400AF7540 /* PTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D2C1C716AF400AF7540 /* PTCategory.m */; };
+		313B9D301C80088000AF7540 /* CategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D2F1C80088000AF7540 /* CategoryStore.m */; };
+		313B9D331C828E3700AF7540 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D321C828E3700AF7540 /* CategoriesViewController.m */; };
+		313B9D361C8380D100AF7540 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D351C8380D100AF7540 /* CategoryCell.m */; };
+		313B9D381C8384B400AF7540 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313B9D371C8384B400AF7540 /* HeaderView.xib */; };
 		314F04E21C4C56A5008B9A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04E11C4C56A5008B9A4A /* main.m */; };
 		314F04E51C4C56A5008B9A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04E41C4C56A5008B9A4A /* AppDelegate.m */; };
-		314F04E81C4C56A5008B9A4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04E71C4C56A5008B9A4A /* ViewController.m */; };
 		314F04EB1C4C56A5008B9A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314F04E91C4C56A5008B9A4A /* Main.storyboard */; };
 		314F04ED1C4C56A5008B9A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314F04EC1C4C56A5008B9A4A /* Assets.xcassets */; };
 		314F04F01C4C56A5008B9A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314F04EE1C4C56A5008B9A4A /* LaunchScreen.storyboard */; };
 		314F04FB1C4C56A5008B9A4A /* ProgressTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04FA1C4C56A5008B9A4A /* ProgressTrackerTests.m */; };
 		314F05061C4C56A5008B9A4A /* ProgressTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F05051C4C56A5008B9A4A /* ProgressTrackerUITests.m */; };
+		319555E21C9BB495006F2E64 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319555E11C9BB495006F2E64 /* PageContentViewController.m */; };
+		319555E51C9CE8D0006F2E64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319555E41C9CE8D0006F2E64 /* ViewController.m */; };
+		31EE09C91C95FD5F009B454F /* ProgressItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09C81C95FD5F009B454F /* ProgressItems.m */; };
+		31EE09CC1C960CD2009B454F /* ProgressItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09CB1C960CD2009B454F /* ProgressItemsViewController.m */; };
+		31EE09CF1C963605009B454F /* ProgressItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09CE1C963605009B454F /* ProgressItemsStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		313B9D2B1C716AF400AF7540 /* PTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCategory.h; sourceTree = "<group>"; };
+		313B9D2C1C716AF400AF7540 /* PTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCategory.m; sourceTree = "<group>"; };
+		313B9D2E1C80088000AF7540 /* CategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryStore.h; sourceTree = "<group>"; };
+		313B9D2F1C80088000AF7540 /* CategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryStore.m; sourceTree = "<group>"; };
+		313B9D311C828E3700AF7540 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		313B9D321C828E3700AF7540 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		313B9D341C8380D100AF7540 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		313B9D351C8380D100AF7540 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		313B9D371C8384B400AF7540 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		314F04DD1C4C56A4008B9A4A /* ProgressTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F04E11C4C56A5008B9A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		314F04E31C4C56A5008B9A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		314F04E41C4C56A5008B9A4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		314F04E61C4C56A5008B9A4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		314F04E71C4C56A5008B9A4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		314F04EA1C4C56A5008B9A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		314F04EC1C4C56A5008B9A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		314F04EF1C4C56A5008B9A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +67,16 @@
 		314F05011C4C56A5008B9A4A /* ProgressTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F05051C4C56A5008B9A4A /* ProgressTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressTrackerUITests.m; sourceTree = "<group>"; };
 		314F05071C4C56A5008B9A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319555E01C9BB494006F2E64 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		319555E11C9BB495006F2E64 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		319555E31C9CE8D0006F2E64 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		319555E41C9CE8D0006F2E64 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31EE09C71C95FD5F009B454F /* ProgressItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItems.h; sourceTree = "<group>"; };
+		31EE09C81C95FD5F009B454F /* ProgressItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItems.m; sourceTree = "<group>"; };
+		31EE09CA1C960CD2009B454F /* ProgressItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItemsViewController.h; sourceTree = "<group>"; };
+		31EE09CB1C960CD2009B454F /* ProgressItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItemsViewController.m; sourceTree = "<group>"; };
+		31EE09CD1C963605009B454F /* ProgressItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItemsStore.h; sourceTree = "<group>"; };
+		31EE09CE1C963605009B454F /* ProgressItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItemsStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +128,31 @@
 			isa = PBXGroup;
 			children = (
 				314F04E31C4C56A5008B9A4A /* AppDelegate.h */,
+				31EE09CA1C960CD2009B454F /* ProgressItemsViewController.h */,
+				31EE09CB1C960CD2009B454F /* ProgressItemsViewController.m */,
 				314F04E41C4C56A5008B9A4A /* AppDelegate.m */,
-				314F04E61C4C56A5008B9A4A /* ViewController.h */,
-				314F04E71C4C56A5008B9A4A /* ViewController.m */,
+				313B9D311C828E3700AF7540 /* CategoriesViewController.h */,
+				313B9D321C828E3700AF7540 /* CategoriesViewController.m */,
+				313B9D371C8384B400AF7540 /* HeaderView.xib */,
+				313B9D341C8380D100AF7540 /* CategoryCell.h */,
+				313B9D351C8380D100AF7540 /* CategoryCell.m */,
 				314F04E91C4C56A5008B9A4A /* Main.storyboard */,
 				314F04EC1C4C56A5008B9A4A /* Assets.xcassets */,
 				314F04EE1C4C56A5008B9A4A /* LaunchScreen.storyboard */,
 				314F04F11C4C56A5008B9A4A /* Info.plist */,
 				314F04E01C4C56A4008B9A4A /* Supporting Files */,
+				313B9D2B1C716AF400AF7540 /* PTCategory.h */,
+				313B9D2C1C716AF400AF7540 /* PTCategory.m */,
+				31EE09C71C95FD5F009B454F /* ProgressItems.h */,
+				31EE09C81C95FD5F009B454F /* ProgressItems.m */,
+				31EE09CD1C963605009B454F /* ProgressItemsStore.h */,
+				31EE09CE1C963605009B454F /* ProgressItemsStore.m */,
+				313B9D2E1C80088000AF7540 /* CategoryStore.h */,
+				313B9D2F1C80088000AF7540 /* CategoryStore.m */,
+				319555E01C9BB494006F2E64 /* PageContentViewController.h */,
+				319555E11C9BB495006F2E64 /* PageContentViewController.m */,
+				319555E31C9CE8D0006F2E64 /* ViewController.h */,
+				319555E41C9CE8D0006F2E64 /* ViewController.m */,
 			);
 			path = ProgressTracker;
 			sourceTree = "<group>";
@@ -246,6 +289,7 @@
 				314F04F01C4C56A5008B9A4A /* LaunchScreen.storyboard in Resources */,
 				314F04ED1C4C56A5008B9A4A /* Assets.xcassets in Resources */,
 				314F04EB1C4C56A5008B9A4A /* Main.storyboard in Resources */,
+				313B9D381C8384B400AF7540 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314F04E81C4C56A5008B9A4A /* ViewController.m in Sources */,
+				31EE09C91C95FD5F009B454F /* ProgressItems.m in Sources */,
+				319555E21C9BB495006F2E64 /* PageContentViewController.m in Sources */,
+				313B9D2D1C716AF400AF7540 /* PTCategory.m in Sources */,
+				313B9D361C8380D100AF7540 /* CategoryCell.m in Sources */,
+				31EE09CC1C960CD2009B454F /* ProgressItemsViewController.m in Sources */,
 				314F04E51C4C56A5008B9A4A /* AppDelegate.m in Sources */,
 				314F04E21C4C56A5008B9A4A /* main.m in Sources */,
+				313B9D331C828E3700AF7540 /* CategoriesViewController.m in Sources */,
+				313B9D301C80088000AF7540 /* CategoryStore.m in Sources */,
+				31EE09CF1C963605009B454F /* ProgressItemsStore.m in Sources */,
+				319555E51C9CE8D0006F2E64 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +550,7 @@
 				314F050C1C4C56A5008B9A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		314F050D1C4C56A5008B9A4A /* Build configuration list for PBXNativeTarget "ProgressTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +559,7 @@
 				314F050F1C4C56A5008B9A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		314F05101C4C56A5008B9A4A /* Build configuration list for PBXNativeTarget "ProgressTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +568,7 @@
 				314F05121C4C56A5008B9A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

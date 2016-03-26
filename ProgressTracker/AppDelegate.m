@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "CategoryStore.h"
+#import "CategoriesViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // CategoryStore *categoryStore = [[CategoryStore alloc] init];
+    //CategoriesViewController *ivc = [[CategoriesViewController alloc] init];
+    
+    
+    // Use the ItemsViewController as the top-level view controller in the app
+    //self.window.rootViewController = ivc;
+    //[self.window makeKeyAndVisible];
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    
     // Override point for customization after application launch.
     return YES;
 }
