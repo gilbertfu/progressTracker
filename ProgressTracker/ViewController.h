@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PageContentViewController.h"
 #import "ProgressItems.h"
+#import "ItemViewsDetailsViewController.h"
 
-@interface ViewController : UIViewController <UIPageViewControllerDataSource>
+@interface ViewController : UIViewController <UIPageViewControllerDataSource, ItemViewsDetailsViewControllerDelegate>
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) NSArray *pageTitles;
 @property (strong, nonatomic) ProgressItems *progressItems;

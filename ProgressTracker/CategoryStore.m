@@ -28,6 +28,12 @@
     return newCategory;
 }
 
+- (PTCategory *) createCategoryWithName:(NSString *)name {
+    PTCategory *newCategory = [[PTCategory alloc] initWithName: name];
+    [self.categories addObject:newCategory];
+    return newCategory;
+}
+
 - (void)removeCategory:(PTCategory *)category {
     [self.categories removeObjectIdenticalTo:category];
 }

@@ -15,6 +15,7 @@
 
 - (NSArray *) allCategories;
 - (PTCategory *) createCategory;
+- (PTCategory *) createCategoryWithName:(NSString *)name;
 -(void)removeCategory:(PTCategory *)category;
 - (void)moveCategoryAtIndex:(NSInteger)source
                 toIndex:(NSInteger)destination;

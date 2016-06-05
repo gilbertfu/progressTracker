@@ -12,6 +12,7 @@
 		313B9D331C828E3700AF7540 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D321C828E3700AF7540 /* CategoriesViewController.m */; };
 		313B9D361C8380D100AF7540 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 313B9D351C8380D100AF7540 /* CategoryCell.m */; };
 		313B9D381C8384B400AF7540 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313B9D371C8384B400AF7540 /* HeaderView.xib */; };
+		313CB71F1CFCDDC400D56096 /* NewCategoryPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CB71E1CFCDDC400D56096 /* NewCategoryPopoverViewController.m */; };
 		314F04E21C4C56A5008B9A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04E11C4C56A5008B9A4A /* main.m */; };
 		314F04E51C4C56A5008B9A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04E41C4C56A5008B9A4A /* AppDelegate.m */; };
 		314F04EB1C4C56A5008B9A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314F04E91C4C56A5008B9A4A /* Main.storyboard */; };
@@ -19,11 +20,15 @@
 		314F04F01C4C56A5008B9A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314F04EE1C4C56A5008B9A4A /* LaunchScreen.storyboard */; };
 		314F04FB1C4C56A5008B9A4A /* ProgressTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F04FA1C4C56A5008B9A4A /* ProgressTrackerTests.m */; };
 		314F05061C4C56A5008B9A4A /* ProgressTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314F05051C4C56A5008B9A4A /* ProgressTrackerUITests.m */; };
+		315A2EF91CA724A600C4E349 /* ProgressItemsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A2EF81CA724A600C4E349 /* ProgressItemsDetailsViewController.m */; };
 		319555E21C9BB495006F2E64 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319555E11C9BB495006F2E64 /* PageContentViewController.m */; };
 		319555E51C9CE8D0006F2E64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319555E41C9CE8D0006F2E64 /* ViewController.m */; };
+		31CB12681CB34E07003822CD /* ItemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CB12671CB34E07003822CD /* ItemVersion.m */; };
 		31EE09C91C95FD5F009B454F /* ProgressItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09C81C95FD5F009B454F /* ProgressItems.m */; };
 		31EE09CC1C960CD2009B454F /* ProgressItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09CB1C960CD2009B454F /* ProgressItemsViewController.m */; };
 		31EE09CF1C963605009B454F /* ProgressItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE09CE1C963605009B454F /* ProgressItemsStore.m */; };
+		31F267E31CBDDF1F00C10A2E /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F267E21CBDDF1F00C10A2E /* DetailListViewController.m */; };
+		31F267E61CC440DF00C10A2E /* ItemViewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F267E51CC440DF00C10A2E /* ItemViewsDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,8 @@
 		313B9D341C8380D100AF7540 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
 		313B9D351C8380D100AF7540 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
 		313B9D371C8384B400AF7540 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		313CB71D1CFCDDC400D56096 /* NewCategoryPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCategoryPopoverViewController.h; sourceTree = "<group>"; };
+		313CB71E1CFCDDC400D56096 /* NewCategoryPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCategoryPopoverViewController.m; sourceTree = "<group>"; };
 		314F04DD1C4C56A4008B9A4A /* ProgressTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F04E11C4C56A5008B9A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		314F04E31C4C56A5008B9A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,16 +74,24 @@
 		314F05011C4C56A5008B9A4A /* ProgressTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F05051C4C56A5008B9A4A /* ProgressTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressTrackerUITests.m; sourceTree = "<group>"; };
 		314F05071C4C56A5008B9A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315A2EF71CA724A600C4E349 /* ProgressItemsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItemsDetailsViewController.h; sourceTree = "<group>"; };
+		315A2EF81CA724A600C4E349 /* ProgressItemsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItemsDetailsViewController.m; sourceTree = "<group>"; };
 		319555E01C9BB494006F2E64 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		319555E11C9BB495006F2E64 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		319555E31C9CE8D0006F2E64 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		319555E41C9CE8D0006F2E64 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31CB12661CB34E07003822CD /* ItemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemVersion.h; sourceTree = "<group>"; };
+		31CB12671CB34E07003822CD /* ItemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemVersion.m; sourceTree = "<group>"; };
 		31EE09C71C95FD5F009B454F /* ProgressItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItems.h; sourceTree = "<group>"; };
 		31EE09C81C95FD5F009B454F /* ProgressItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItems.m; sourceTree = "<group>"; };
 		31EE09CA1C960CD2009B454F /* ProgressItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItemsViewController.h; sourceTree = "<group>"; };
 		31EE09CB1C960CD2009B454F /* ProgressItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItemsViewController.m; sourceTree = "<group>"; };
 		31EE09CD1C963605009B454F /* ProgressItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressItemsStore.h; sourceTree = "<group>"; };
 		31EE09CE1C963605009B454F /* ProgressItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressItemsStore.m; sourceTree = "<group>"; };
+		31F267E11CBDDF1E00C10A2E /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
+		31F267E21CBDDF1F00C10A2E /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
+		31F267E41CC440DF00C10A2E /* ItemViewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewsDetailsViewController.h; sourceTree = "<group>"; };
+		31F267E51CC440DF00C10A2E /* ItemViewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewsDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,16 +148,24 @@
 				314F04E41C4C56A5008B9A4A /* AppDelegate.m */,
 				313B9D311C828E3700AF7540 /* CategoriesViewController.h */,
 				313B9D321C828E3700AF7540 /* CategoriesViewController.m */,
+				313CB71D1CFCDDC400D56096 /* NewCategoryPopoverViewController.h */,
+				313CB71E1CFCDDC400D56096 /* NewCategoryPopoverViewController.m */,
 				313B9D371C8384B400AF7540 /* HeaderView.xib */,
 				313B9D341C8380D100AF7540 /* CategoryCell.h */,
 				313B9D351C8380D100AF7540 /* CategoryCell.m */,
 				314F04E91C4C56A5008B9A4A /* Main.storyboard */,
+				31F267E41CC440DF00C10A2E /* ItemViewsDetailsViewController.h */,
+				31F267E51CC440DF00C10A2E /* ItemViewsDetailsViewController.m */,
+				315A2EF71CA724A600C4E349 /* ProgressItemsDetailsViewController.h */,
+				315A2EF81CA724A600C4E349 /* ProgressItemsDetailsViewController.m */,
 				314F04EC1C4C56A5008B9A4A /* Assets.xcassets */,
 				314F04EE1C4C56A5008B9A4A /* LaunchScreen.storyboard */,
 				314F04F11C4C56A5008B9A4A /* Info.plist */,
 				314F04E01C4C56A4008B9A4A /* Supporting Files */,
 				313B9D2B1C716AF400AF7540 /* PTCategory.h */,
 				313B9D2C1C716AF400AF7540 /* PTCategory.m */,
+				31CB12661CB34E07003822CD /* ItemVersion.h */,
+				31CB12671CB34E07003822CD /* ItemVersion.m */,
 				31EE09C71C95FD5F009B454F /* ProgressItems.h */,
 				31EE09C81C95FD5F009B454F /* ProgressItems.m */,
 				31EE09CD1C963605009B454F /* ProgressItemsStore.h */,
@@ -151,6 +174,8 @@
 				313B9D2F1C80088000AF7540 /* CategoryStore.m */,
 				319555E01C9BB494006F2E64 /* PageContentViewController.h */,
 				319555E11C9BB495006F2E64 /* PageContentViewController.m */,
+				31F267E11CBDDF1E00C10A2E /* DetailListViewController.h */,
+				31F267E21CBDDF1F00C10A2E /* DetailListViewController.m */,
 				319555E31C9CE8D0006F2E64 /* ViewController.h */,
 				319555E41C9CE8D0006F2E64 /* ViewController.m */,
 			);
@@ -317,14 +342,19 @@
 				31EE09C91C95FD5F009B454F /* ProgressItems.m in Sources */,
 				319555E21C9BB495006F2E64 /* PageContentViewController.m in Sources */,
 				313B9D2D1C716AF400AF7540 /* PTCategory.m in Sources */,
+				31F267E61CC440DF00C10A2E /* ItemViewsDetailsViewController.m in Sources */,
+				31F267E31CBDDF1F00C10A2E /* DetailListViewController.m in Sources */,
 				313B9D361C8380D100AF7540 /* CategoryCell.m in Sources */,
 				31EE09CC1C960CD2009B454F /* ProgressItemsViewController.m in Sources */,
 				314F04E51C4C56A5008B9A4A /* AppDelegate.m in Sources */,
 				314F04E21C4C56A5008B9A4A /* main.m in Sources */,
+				31CB12681CB34E07003822CD /* ItemVersion.m in Sources */,
 				313B9D331C828E3700AF7540 /* CategoriesViewController.m in Sources */,
+				313CB71F1CFCDDC400D56096 /* NewCategoryPopoverViewController.m in Sources */,
 				313B9D301C80088000AF7540 /* CategoryStore.m in Sources */,
 				31EE09CF1C963605009B454F /* ProgressItemsStore.m in Sources */,
 				319555E51C9CE8D0006F2E64 /* ViewController.m in Sources */,
+				315A2EF91CA724A600C4E349 /* ProgressItemsDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

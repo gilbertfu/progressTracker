@@ -11,6 +11,7 @@
 #import "PTCategory.h"
 #import "CategoryCell.h"
 #import "ProgressItemsViewController.h"
+#import "NewCategoryPopoverViewController.h"
 
 @implementation CategoriesViewController
 
@@ -37,9 +38,9 @@
     self = [super initWithCoder:decoder];
     _categoryStore = [[CategoryStore alloc] init];;
     
-    for (int i = 0; i < 5; i++) {
+    /*for (int i = 0; i < 5; i++) {
         [_categoryStore createCategory];
-    }
+    }*/
     return self;
 }
 
@@ -80,13 +81,13 @@
 
 - (IBAction)addNewItem:(id)sender {
     // Create a new item and add it to the store
-    PTCategory *newCategory = [self.categoryStore createCategory];
+    /*PTCategory *newCategory = [self.categoryStore createCategory];
     // Figure out the item's index in the items array
     NSInteger index = [self.categoryStore.allCategories indexOfObjectIdenticalTo:newCategory];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     // Insert a row at this indexpath in the table
     [self.tableView insertRowsAtIndexPaths:@[indexPath]
-                          withRowAnimation:UITableViewRowAnimationTop];
+                          withRowAnimation:UITableViewRowAnimationTop];*/
 }
 
 
@@ -120,7 +121,14 @@
         pvc.categoryName = category.name;
         [pvc.Title setText: category.name];
     }
-    
+    if ([segue.identifier isEqualToString:@"addNewCategory"]) {
+        UIPopoverPresentationController *controller = destVC.popoverPresentationController;
+        NewCategoryPopoverViewController *popViewController = (NewCategoryPopoverViewController *) destVC;
+        popViewController.myDelegate = self;
+        if (controller) {
+            controller.delegate = self;
+        }
+    }
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -145,4 +153,28 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
                             toIndex:destinationIndexPath.row];
 }
 
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
+    return UIModalPresentationNone;
+}
+
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
+    //NSLog(@"what up");
+}
+
+-(void) newCategoryPopoverControllerSaved:(NSString *)stringForFirst {
+    NSLog(@"what up G %@", stringForFirst);
+    for (PTCategory *cat in self.categoryStore.allCategories) {
+        if ([cat.name isEqualToString:stringForFirst]) {
+            NSLog(@"Already have category with name: %@", stringForFirst);
+            return;
+        }
+    }
+    PTCategory *newCategory = [self.categoryStore createCategoryWithName:stringForFirst];
+    // Figure out the item's index in the items array
+    NSInteger index = [self.categoryStore.allCategories indexOfObjectIdenticalTo:newCategory];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    // Insert a row at this indexpath in the table
+    [self.tableView insertRowsAtIndexPaths:@[indexPath]
+                          withRowAnimation:UITableViewRowAnimationTop];
+}
 @end

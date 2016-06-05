@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProgressItemsDetailsViewController.h"
 @class ProgressItemsStore;
 
-@interface ProgressItemsViewController : UITableViewController
+@interface ProgressItemsViewController : UITableViewController <ProgressItemsDetailsViewControllerDelegate>
 @property (nonatomic) ProgressItemsStore *progressItemsStore;
 @property (nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UILabel *Title;

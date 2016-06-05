@@ -9,14 +9,15 @@
 #import "ProgressItemsViewController.h"
 #import "ProgressItems.h"
 #import "ProgressItemsStore.h"
+#import "ItemVersion.h"
 #import "ViewController.h"
 
 @implementation ProgressItemsViewController
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
-    _progressItemsStore = [[ProgressItemsStore alloc] init];;
+    _progressItemsStore = [[ProgressItemsStore alloc] init];
     
-   /* for (int i = 0; i < 5; i++) {
+    /*for (int i = 0; i < 5; i++) {
         [_progressItemsStore createProgressItems];
     }*/
     return self;
@@ -82,13 +83,13 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 - (IBAction)addNewItem:(id)sender {
     // Create a new item and add it to the store
     //prompt the user to enter name of new progress items to track
-    ProgressItems *newProgressItems = [self.progressItemsStore createProgressItems];
+    /*ProgressItems *newProgressItems = [self.progressItemsStore createProgressItems];
     // Figure out the item's index in the items array
     NSInteger index = [self.progressItemsStore.allProgressItems indexOfObjectIdenticalTo:newProgressItems];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     // Insert a row at this indexpath in the table
     [self.tableView insertRowsAtIndexPaths:@[indexPath]
-                          withRowAnimation:UITableViewRowAnimationTop];
+                          withRowAnimation:UITableViewRowAnimationTop];*/
 }
 
 
@@ -121,10 +122,29 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
         NSInteger row = [self.tableView indexPathForSelectedRow].row;
         ProgressItems *progressItems = self.progressItemsStore.allProgressItems[row];
         ViewController *vc = (ViewController *)destVC;
-        //ProgressItemsViewController *pvc = (ProgressItemsViewController *)nc.v
         vc.progressItems = progressItems;
         //pvc.Title setText: category.name];
     }
     
+    if ([segue.identifier isEqualToString:@"newProgressItemsDetails"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        ProgressItemsDetailsViewController *progressItemsDetailsViewController = [navigationController viewControllers][0];
+        progressItemsDetailsViewController.delegate = self;
+    }
+    
+}
+
+#pragma mark - PlayerDetailsViewControllerDelegate
+
+- (void)progressItemsDetailsViewControllerDidCancel:(ProgressItemsDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)progressItemsDetailsViewControllerDidSave:(ProgressItemsDetailsViewController *)controller
+                                       didAddItem:(ProgressItems *)item
+{
+    [self.progressItemsStore.progressItemsArray addObject:item];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

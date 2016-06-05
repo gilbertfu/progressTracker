@@ -20,7 +20,7 @@
 - (instancetype)initWithName:(NSString *)name NS_DESIGNATED_INITIALIZER;
 
 + (instancetype)randomCategory;
-+ (void) addNewProgressItem: (ProgressItems *) newProgressItems;
-+ (void) removeProgressItem: (ProgressItems *) progressItems;
-+ (NSArray *) allProgressItemsForCategory;
+- (void) addNewProgressItem: (ProgressItems *) newProgressItems;
+- (void) removeProgressItem: (ProgressItems *) progressItems;
+- (NSArray *) allProgressItemsForCategory;
 @end

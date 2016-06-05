@@ -19,6 +19,7 @@
         _name = name;
         // Set _dateCreated to the current date and time
         _dateCreated = [[NSDate alloc] init];
+        _allItemVersions = [[NSMutableArray alloc] init];
     }
     // Return the address of the newly initialized object
     return self;

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemVersion.h"
 
 @interface PageContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property NSUInteger pageIndex;
 @property NSString *titleText;
+@property NSString *descriptionText;
+@property ItemVersion *itemVersion;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionBox;
 @end
